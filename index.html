@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .heading{
+            padding: 60px;
+            background-color: lightseagreen;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .linkMenuBar{
+            background-color: black;
+            display: flex;
+        }
+        .linkMenuBar a{
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        a:hover{
+            background-color: lightgray;
+            color: black;
+        }
+
+
+        .title{
+            display: flex;
+            width: 100%;
+        }
+        .first{
+            background-color: rgba(211, 211, 211, 0.306);
+            height: 800px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 4vh;
+            padding-top: 6vh;
+            row-gap: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .second{
+            height: 800px;
+            width: 70%;
+            background-color: white;
+            display: flex;
+            flex-direction:column;
+            row-gap: 20px;
+            padding-top: 6vh;
+            padding-left: 4vh;
+        }
+        .image1{
+            background-color: gray;
+            height:100px;
+            margin-right: 4vh;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+
+        .image2,.image3,.image4{
+            background-color: gray;
+            height: 40px;
+            padding-left: 10px;
+            display:flex;
+            align-items: center;
+
+        }
+        @media screen and (max-width:700px){
+            .linkMenuBar,.title{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div>
+                <H1>My Website</H1>
+            </div>
+            <div>
+                <p>With a <b>flexible</b> layout</p>
+            </div>
+        </div>
+    </header>
+        <div class="linkMenuBar">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+        </div>
+    <div class="title">
+        <div class="first">
+            <div>
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <p>Photo of me:</p>
+            </div>
+            <div class="image1">
+                <h3>Image</h3>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat incidunt  </p>
+            </div>
+            <div>
+                <H2>More Text</H2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="image2">
+                <h3>image</h3>
+            </div>
+            <div class="image3">
+                <h3>image</h3>
+            </div>
+            <div class="image4">
+                <h3>image</h3>
+            </div>
+
+        </div>
+        <div class="second">
+            <div>
+                <h2>TITLE HEADING</h2>
+            </div>
+            <div>
+                <P>Title description,Dec 7,2017</P>
+            </div>
+            <div class="image1">
+                <h3>Image</h3>
+            </div>
+            <div>
+                    some text..
+            </div>
+            <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore mollitia quis iste excepturi quidem.</p>
+            </div>
+            <div>
+                <h2>TITLE HEADING</h2>
+            </div>
+            <div>
+                <P>Title description,Dec 7,2017</P>
+            </div>
+            <div class="image1">
+                    <h3>Image</h3>
+            </div>
+            <div>
+                    some text..
+            </div>
+            <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore mollitia quis iste excepturi quidem.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
